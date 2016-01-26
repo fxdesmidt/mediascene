@@ -1,1 +1,13 @@
-//= require jquery
+//= require jquery-1.8.3.min
+//= require sonsie-onen4all
+//= require jquery-1
+//= require museutils
+//= require webpro
+//= require musewpslideshow
+//= require touchswipe
+//= require jquery_005
+//= require jquery_004
+//= require jquery_002
+//= require jquery_003
+//= require musewpdisclosure
+//= require test
