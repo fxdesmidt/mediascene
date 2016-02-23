@@ -1,5 +1,6 @@
 //= require jquery-1.8.3.min
 //= require sonsie-onen4all
+//= require jquery
 //= require jquery-1
 //= require museutils
 //= require webpro
@@ -10,4 +11,5 @@
 //= require jquery_002
 //= require jquery_003
 //= require musewpdisclosure
+//= require colorbox/jquery.colorbox
 //= require test

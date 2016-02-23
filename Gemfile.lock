@@ -35,6 +35,7 @@ GEM
       http_parser.rb (~> 0.6.0)
     erubis (2.7.0)
     eventmachine (1.0.9.1)
+    excon (0.45.4)
     execjs (2.6.0)
     ffi (1.9.10)
     haml (4.0.7)
@@ -49,6 +50,9 @@ GEM
     listen (3.0.5)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
+    mandrill-api (1.0.53)
+      excon (>= 0.16.0, < 1.0)
+      json (>= 1.7.7, < 2.0)
     middleman (3.4.1)
       coffee-script (~> 2.2)
       compass (>= 1.0.0, < 2.0.0)
@@ -149,6 +153,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  mandrill-api
   middleman (~> 3.3)
   middleman-deploy
   middleman-google-analytics
