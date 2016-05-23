@@ -111,8 +111,8 @@ $(window).resize(function () {
     }
 });
 
-$(window).scroll(function (event) {
-    if ($(window).scrollTop() >= $("#page").position().top && window.innerWidth >= 1024) {
+$(window).scroll(function () {
+    if ($(window).scrollTop() >= ($("#u786").position().top * 2 ) && window.innerWidth >= 1024) {
         $(".floatbar").show();
     }
     else {
