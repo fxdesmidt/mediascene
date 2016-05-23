@@ -89,6 +89,10 @@ $(window).load(function() {
         $('#'+revealRef).append('<a class="close-reveal-modal" aria-label="Close">&#215;</a>');
         $('#'+revealRef).foundation('reveal', 'open');
     });
+
+    $('body').on('click', '#sendMail', function () {
+        window.open('mailto:test@example.com?subject=subject&body=body');
+    });
 });
 
 $(document).on('opened.fndtn.reveal', '[data-reveal]', function () {
