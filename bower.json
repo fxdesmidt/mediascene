@@ -2,6 +2,7 @@
   "name": "mediascene",
   "version": "0.0.1",
   "dependencies": {
-    "colorbox": "1.6.3"
+    "colorbox": "1.6.3",
+    "foundation": "5.5.2"
   }
 }

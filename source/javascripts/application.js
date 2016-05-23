@@ -12,4 +12,5 @@
 //= require jquery_003
 //= require musewpdisclosure
 //= require colorbox/jquery.colorbox
+//= require foundation
 //= require test
