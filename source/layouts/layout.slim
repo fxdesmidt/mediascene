@@ -4,11 +4,18 @@ html(lang='fr')
     meta charset='utf-8'
     = auto_display_meta_tags
     meta name='viewport' content='width=device-width, user-scalable=no, minimal-ui'
-    link href='/favicon.png' rel='shortcut icon' type='image/vnd.microsoft.icon'
+    link href='images/favicon.png' rel='shortcut icon' type='image/vnd.microsoft.icon'
     = stylesheet_link_tag 'application', media: 'all'
 
   body
+    include
+      = header
+    #content
+      include
+        = factory
+      include benefit
     = yield
+
 
     = javascript_include_tag 'application'
     = google_analytics_tag

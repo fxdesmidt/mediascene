@@ -1063,15 +1063,6 @@ textarea
   position: relative;
 }
 
-#actu
-{
-  vertical-align: middle;
-  font-size: 1.350em;
-  color: white;
-  width: 100%;
-  text-shadow: #000000 2px 2px;
-  padding-left: 30px;
-}
 
 .topnews-container
 {
@@ -1975,7 +1966,6 @@ textarea
   height: 246px;
   border-color: #000000;
   position: relative;
-  background: #FFFFFF image-url("7080779303_45c01c596d_o-u540-fr.jpg") no-repeat left top;
   background-size: cover;
 }
 
@@ -5591,6 +5581,11 @@ $under-breakline: "#{$screen} and (max-width:#{em-calc(1200)})" !default;
   background-color: #000829;
   opacity: 0.9;
   font-weight: bold;
+  #floatbar-content {
+    margin: 0 auto;
+    max-width: 62.5rem;
+    height: 60px;
+  }
 }
 
 #page_position_content {
@@ -5654,9 +5649,216 @@ $under-breakline: "#{$screen} and (max-width:#{em-calc(1200)})" !default;
   }
   .float-content:hover p
   {
-    font-size: 20px;
+    font-size: 16px;
     font-family: raleway, sans-serif;
     font-weight: 700;
     font-style: normal;
   }
 }
+
+#header-nav {
+  background-color: #000829;
+  opacity: 0.8;
+  a {
+    p {
+      text-shadow: #000000 2px 2px;
+      font-weight: bold;
+    }
+    color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    p {
+      font-size: 1.250em;
+      opacity: 1;
+    }
+  }
+}
+
+#pre-header {
+  border-top: 4px solid black;
+}
+
+#header {
+  height: 1080px;
+}
+
+.header {
+  padding-top: 55px;
+  height: 800px;
+}
+
+#hero-image {
+  background-image: image-url("header.jpg");
+  background-position: center top;
+  background-size: 100% auto;
+  height: 100%;
+}
+
+#factory-informations {
+  margin-top: 110px;
+  height: 245px;
+}
+
+#factory-informations-content {
+  display: table-cell;
+  height: 100%;
+}
+
+#factory-name {
+  font-size: 5em !important;
+  line-height: 1 !important;
+  text-shadow: #000000 2px 2px, #000000 -2px 2px, #000000 -2px -2px, #000000 2px -2px;
+  background-color: transparent;
+  color: #FFFFFF;
+  font-size: 77px;
+  letter-spacing: 3px;
+  line-height: 92px;
+  font-family: lobster, serif;
+  font-weight: 400;
+}
+
+#factory-activities {
+  color: #FFFFFF;
+  font-size: 1.400em;
+  text-shadow: #000000 2px 2px;
+  transform:scale(1.150,2); /* W3C */
+  -webkit-transform:scale(1.150,2); /* Safari and Chrome */
+  -moz-transform:scale(1.150,2); /* Firefox */
+  -ms-transform:scale(1.150,2); /* IE 9 */
+  -o-transform:scale(1.150,2); /* Opera */
+}
+
+#down-arrow {
+  width: 100px;
+  height: 100px;
+  border-color: #000000;
+  position: relative;
+  background: transparent image-url("down-arrow.png") no-repeat left top;
+}
+
+#actus {
+  opacity: 0.8;
+  width: 300px;
+  margin: 0px auto;
+}
+
+#actu-title {
+  color: white;
+  background-color: #000829;
+  font-size: 1.350em;
+  color: white;
+  width: 100%;
+  text-shadow: #000000 2px 2px;
+  text-align: center;
+}
+
+.actu-date {
+  width: 100%;
+  position: relative;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+}
+
+.actu-place {
+  width: 100%;
+  position: relative;
+  float: left;
+  text-align: center;
+  font-style: italic;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 0.850em;
+}
+
+.actu-content {
+  width: 100%;
+  position: relative;
+  float: left;
+  text-align: center;
+}
+
+.bx-wrapper {
+  padding: 10px;
+  color: black;
+  background-color: white;
+  height: 180px;
+  overflow: hidden;
+}
+
+#arrow-header {
+  margin: 0px auto;
+  width: 100px;
+  margin-top: 150px;
+}
+
+#content {
+  overflow: hidden
+}
+
+#factory-illustration {
+  z-index: 104;
+  width: 560px;
+  height: 653px;
+  border-color: #000000;
+  position: relative;
+  left: 100%;
+  background: transparent image-url("about-img-2.png") no-repeat left top;
+  -webkit-transition:all 1.0s ease-in-out;
+  -moz-transition:all 1.0s ease-in-out;
+  -o-transition:all 1.0s ease-in-out;
+  transition:all 1.0s ease-in-out;
+}
+
+#factory {
+  position: relative;
+  top: -50px;
+}
+
+#factory-content {
+  color: white;
+  background: image-url("footer_lodyas.jpg") repeat left top;
+  h2 {
+    color: white;
+    font-size: 4.5em;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #factory-description {
+    span {
+      font-weight: bolder;
+    }
+    line-height: 1.6;
+  }
+}
+
+#benefit-content {
+  color: black;
+  h2 {
+    color: black;
+    font-size: 4.5em;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .benefit-description {
+    .columns {
+      padding-right: 50px;
+      padding-left: 50px;
+    }
+    h3 {
+      font-size: 2.5em;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .benefit-content-center {
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+    }
+  }
+}
+

@@ -160,6 +160,7 @@ DEPENDENCIES
   middleman-livereload
   middleman-meta-tags
   slim
+  slim/include
 
 BUNDLED WITH
    1.11.2

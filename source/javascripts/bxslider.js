@@ -1,0 +1,1 @@
+//= require ../../bower_components/bxslider-4/dist/jquery.bxslider
