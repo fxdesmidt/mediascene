@@ -1,4 +1,6 @@
 $(document).foundation();
+// declare global
+var slider_array = new Array();
 
 $(document).ready(function(){
     $('a[href*="#"]:not([href="#"])').click(function() {
@@ -25,7 +27,7 @@ $(document).ready(function(){
         window.open('mailto:test@example.com?subject=subject&body=body');
     });
 
-    $("a.factories_link").click(function(event) {
+    $("a.factories_link").click(function() {
         $('#factory-illustration').css('left', '50%');
     });
 
@@ -36,6 +38,63 @@ $(document).ready(function(){
         autoControls: false,
         pause: 5000,
         pager: false,
+    });
+
+    var bxLeft = $('#benefit-slider-left').bxSlider({
+        mode: 'vertical',
+        auto: true,
+        autoHover: false,
+        controls: true,
+        autoControls: false,
+        pause: 5000,
+        pager: false,
+    });
+
+    var bxCenter = $('#benefit-slider-center').bxSlider({
+        mode: 'vertical',
+        auto: true,
+        autoHover: false,
+        controls: true,
+        autoControls: false,
+        pause: 5000,
+        pager: false,
+        directions: 'prev',
+    });
+
+    var bxRight = $('#benefit-slider-right').bxSlider({
+        mode: 'vertical',
+        auto: true,
+        autoHover: false,
+        controls: true,
+        autoControls: false,
+        pause: 5000,
+        pager: false,
+    });
+
+    $('#rightBtn').bind('click', function(){
+        bxLeft.goToNextSlide();
+        bxCenter.goToNextSlide();
+        bxRight.goToNextSlide();
+    });
+
+    $('#leftBtn').bind('click', function(){
+        bxLeft.goToPrevSlide();
+        bxCenter.goToPrevSlide();
+        bxRight.goToPrevSlide();
+    });
+
+    $('#galery-title-left').bind('click', function(){
+        $('#galery-title-right').removeClass('galery-title-r-active');
+        $(this).addClass('galery-title-l-active');
+        $('#galery-l-content').show();
+        $('#galery-r-content').hide();
+    });
+
+    $('#galery-title-right').bind('click', function(){
+        $('#galery-title-left').removeClass('galery-title-l-active');
+        $(this).addClass('galery-title-r-active');
+        $('#galery-l-content').hide();
+        $('#galery-r-content').show();
     });
 });
 

@@ -5835,7 +5835,51 @@ $under-breakline: "#{$screen} and (max-width:#{em-calc(1200)})" !default;
   }
 }
 
+#benefit {
+  position: relative;
+  top: -50px;
+}
+
+.benefit-margin-bottom {
+  margin-bottom: 20px;
+}
+
 #benefit-content {
+  height: 700px;
+  .bx-prev, .bx-next {
+    display: none;
+  }
+  #benefit-navigation {
+    height: 141px;
+    #content {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      padding-right: 40px;
+    }
+  }
+  #leftBtn {
+    cursor: pointer;
+    position: relative;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-color: #999999;
+  }
+  #rightBtn {
+    cursor: pointer;
+    position: relative;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-color: #999999;
+    margin-left: 25px;
+  }
+  .bx-wrapper {
+    height: 100% !important;
+  }
   color: black;
   h2 {
     color: black;
@@ -5844,21 +5888,128 @@ $under-breakline: "#{$screen} and (max-width:#{em-calc(1200)})" !default;
     margin-top: 20px;
     margin-bottom: 20px;
   }
+  .benefit-content-center {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+  }
   .benefit-description {
     .columns {
       padding-right: 50px;
       padding-left: 50px;
     }
     h3 {
-      font-size: 2.5em;
+      font-size: 16px;
+      line-height: 26px;
+      font-family: raleway, sans-serif;
+      font-weight: 900;
       text-align: center;
-      margin-top: 20px;
-      margin-bottom: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin: 0 auto;
+      width: 280px;
     }
-    .benefit-content-center {
-      border-left: 1px solid black;
-      border-right: 1px solid black;
+    p {
+      margin: 0 auto;
+      z-index: 129;
+      width: 280px;
+      min-height: 196px;
+      background-color: transparent;
+      color: #363636;
+      position: relative;
+      font-size: 14px;
+      line-height: 22px;
+      font-weight: inherit;
+      font-family: raleway, sans-serif;
+      text-align: justify;
+    }
+    #img-benefit-first-bloc-left {
+      background: #fff image-url("dj-u682-fr.jpg") no-repeat left top;
+    }
+    #img-benefit-first-bloc-center {
+      background: #fff image-url("6900641299_38141c68b1_b-u687-fr.jpg") no-repeat left top;
+    }
+    #img-benefit-first-bloc-right {
+      background: #fff image-url("guitar-u688-fr.jpg") no-repeat center center;
+    }
+    #img-benefit-second-bloc-left {
+
+      background: #fff image-url("image_presta_test.jpg") no-repeat left top;
+    }
+    #img-benefit-second-bloc-center {
+      background: #fff image-url("album-art.jpg") no-repeat left top;
+    }
+    #img-benefit-second-bloc-right {
+      background: #fff image-url("399085783_440b8a02a7_o-u547-fr.jpg") no-repeat center center;
+    }
+    .img-benefit {
+      margin: 0 auto;
+      z-index: 110;
+      width: 280px;
+      height: 246px;
+      border-color: #000000;
+      padding-top: 25px;
+      position: relative;
+      background-size: cover;
     }
   }
 }
+
+#galery {
+  position: relative;
+  top: -50px;
+}
+
+#galery-content {
+  height: 700px;
+  color: white;
+  background: image-url("6747448811_730b212b80_o-u1280-fr.png") no-repeat left top;
+  background-color: rgba(0,0,0,0.57);
+  background-size: cover;
+  p {
+    line-height: 39px;
+    font-size: 28px;
+    text-align: center;
+    font-family: raleway, sans-serif;
+    font-weight: 700;
+    position: relative;
+    top: 22px;
+  }
+  h2 {
+    color: white;
+    font-size: 4.5em;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .galery-title {
+    height: 85px;
+    cursor: pointer;
+  }
+  .galery-title:hover {
+    background-color: #000829;
+  }
+
+  .galery-title-l-active {
+    background: -webkit-gradient(linear, left center, right center, from(rgba(255,255,255,0)), color-stop(100%, #000829));
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, #000829 100%);
+    background: -o-linear-gradient(left, rgba(255,255,255,0) 0%, #000829 100%);
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, #000829 100%);
+    border-style: none;
+    border-color: transparent;
+  }
+
+  .galery-title-r-active {
+    background: -webkit-gradient(linear, right center, left center, from(rgba(255, 255, 255, 0)), color-stop(100%, #000829));
+    background: -webkit-linear-gradient(right, rgba(255, 255, 255, 0) 0%, #000829 100%);
+    background: -o-linear-gradient(right, rgba(255, 255, 255, 0) 0%, #000829 100%);
+    background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, #000829 100%);
+    border-style: none;
+    border-color: transparent;
+  }
+
+  #galery-r-content {
+    display: none;
+  }
+}
+
 
