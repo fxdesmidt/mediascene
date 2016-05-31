@@ -8,12 +8,16 @@ html(lang='fr')
     = stylesheet_link_tag 'application', media: 'all'
 
   body
-    include
-      = header
+    include header
     #content
       include factory
       include benefit
       include galery
+      include contact
+
+    include modal-galery
+    include float-bar
+
     = yield
 
 

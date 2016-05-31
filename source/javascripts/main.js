@@ -1,6 +1,9 @@
-$(document).foundation();
-// declare global
-var slider_array = new Array();
+$(document).foundation()
+    .foundation('reveal', {
+        opened: function() {
+            $(window).trigger('resize.fndtn.orbit');
+        }
+});
 
 $(document).ready(function(){
     $('a[href*="#"]:not([href="#"])').click(function() {
@@ -14,13 +17,6 @@ $(document).ready(function(){
                 return false;
             }
         }
-    });
-
-    $('body').on('click', '.show-reveal-galery', function () {
-        var revealRef = $(this).data('reveal-ref');
-
-        $('#'+revealRef).append('<a class="close-reveal-modal" aria-label="Close">&#215;</a>');
-        $('#'+revealRef).foundation('reveal', 'open');
     });
 
     $('body').on('click', '#sendMail', function () {
@@ -86,7 +82,7 @@ $(document).ready(function(){
     $('#galery-title-left').bind('click', function(){
         $('#galery-title-right').removeClass('galery-title-r-active');
         $(this).addClass('galery-title-l-active');
-        $('#galery-l-content').show();
+        $('#galery-l-content').slideDown('fast');
         $('#galery-r-content').hide();
     });
 
@@ -94,12 +90,8 @@ $(document).ready(function(){
         $('#galery-title-left').removeClass('galery-title-l-active');
         $(this).addClass('galery-title-r-active');
         $('#galery-l-content').hide();
-        $('#galery-r-content').show();
+        $('#galery-r-content').slideDown('fast');
     });
-});
-
-$(document).on('opened.fndtn.reveal', '[data-reveal]', function () {
-    $(document).foundation('reflow');
 });
 
 $(window).resize(function () {
@@ -133,10 +125,10 @@ $(window).scroll(function () {
 });
 
 function checkvisible( elm ){
-    var vpH = $( window ).height(), // Viewport Height
-        st = $( window ).scrollTop(), // Scroll Top
-        y = $( elm ).offset().top, // element top
-        h = $( elm ).outerHeight(); // element height
+    var vpH = $(window).height(), // Viewport Height
+        st = $(window).scrollTop(), // Scroll Top
+        y = $(elm).offset().top, // element top
+        h = $(elm).outerHeight(); // element height
 
     return ( ( y + h > st ) && ( y - st < vpH ) );
 }

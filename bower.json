@@ -4,6 +4,10 @@
   "dependencies": {
     "bxslider-4": "4.2.5",
     "colorbox": "1.6.3",
-    "foundation": "5.5.2"
+    "fastclick": "1.0.6",
+    "foundation": "5.5.2",
+    "jquery": "2.2.4",
+    "slick-carousel": "^1.6.0",
+    "unitegallery": "1.7.18"
   }
 }
