@@ -1,0 +1,121 @@
+.reveal-modal {
+  width: 100%;
+
+  @media #{$under-breakline} {
+    width: 95%;
+  }
+  @media #{$small-only} {
+    width: 90%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    .row {
+      padding: 0;
+    }
+  }
+
+  box-shadow: none;
+  @include border-radius(0);
+  border: none;
+  overflow: hidden;
+}
+
+[data-reveal] {
+  outline: 0;
+}
+
+.reveal-custom {
+  display: none;
+  margin-right: 15%;
+  margin-left: 15%;
+  margin-top: 8%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 990;
+  height: 100%;
+  .reveal-content {
+    border: black 10px solid;
+    background: white;
+    @include border-radius(15px);
+    overflow: hidden !important;
+    margin: 0 auto;
+    max-width: 62.5rem;
+    padding: 10px;
+  }
+  .slick-list {
+    margin: 0 auto;
+  }
+  .slider-galery {
+    overflow: hidden;
+  }
+  .close-reveal {
+    float: right;
+    position: relative;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+  }
+  .bottom-nav, .top-nav {
+    @media #{$medium-up} {
+      padding: 18% 0px;
+      .close-reveal {
+        color: #aaa;
+        cursor: pointer;
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 1;
+        position: absolute;
+        top: .625rem;
+        right: 1.375rem;
+      }
+      span {
+        display: none;
+      }
+    }
+    @media #{$small-only} {
+      img {
+        display: none !important;
+      }
+    }
+  }
+  .close-span {
+    cursor: pointer;
+    text-align: right !important;
+  }
+  span {
+    width: 100%;
+    text-align: center;
+    display:inline-block;
+  }
+  .next-galery {
+    cursor: pointer;
+    span {
+      background-color: #000829;
+      color: white;
+    }
+    margin: 0px auto;
+    text-align: center;
+  }
+  .previous-galery {
+    cursor: pointer;
+    span {
+      background-color: #000829;
+      color: white;
+    }
+    margin: 0px auto;
+    text-align: center;
+  }
+}
+
+#reveal-custom-bg {
+  background: #000;
+  background: rgba(0, 0, 0, .45);
+  bottom: 0;
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+}

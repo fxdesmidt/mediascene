@@ -1,0 +1,147 @@
+
+#galery {
+  position: relative;
+  top: -50px;
+}
+
+#galery-content {
+  height: 1080px;
+  color: white;
+  background: image-url("6747448811_730b212b80_o-u1280-fr.png") no-repeat left top;
+  background-color: rgba(0,0,0,0.57);
+  background-size: cover;
+  .galery-title {
+    p {
+      line-height: 39px;
+      @media #{$medium-up} {
+        font-size: 28px;
+      }
+      text-align: center;
+      font-family: raleway, sans-serif;
+      font-weight: 700;
+      position: relative;
+      top: 22px;
+    }
+  }
+  .galery-explain {
+    @include border-radius-left(1em);
+    p {
+      position: relative;
+      text-align: left;
+      @media #{$large-only} {
+        margin-left: 150px;
+      }
+    }
+  }
+  h2 {
+    @media #{$medium-up} {
+      font-size: 4.5em;
+    }
+    @media #{$small-only} {
+      font-size: 2em;
+    }
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .galery-title {
+    height: 85px;
+    cursor: pointer;
+  }
+  .galery-title:hover {
+    background-color: #000829;
+  }
+
+  .galery-title-l-active {
+    background: -webkit-gradient(linear, left center, right center, from(rgba(255,255,255,0)), color-stop(100%, #000829));
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, #000829 100%);
+    background: -o-linear-gradient(left, rgba(255,255,255,0) 0%, #000829 100%);
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, #000829 100%);
+    border-style: none;
+    border-color: transparent;
+  }
+
+  .galery-title-r-active {
+    background: -webkit-gradient(linear, right center, left center, from(rgba(255, 255, 255, 0)), color-stop(100%, #000829));
+    background: -webkit-linear-gradient(right, rgba(255, 255, 255, 0) 0%, #000829 100%);
+    background: -o-linear-gradient(right, rgba(255, 255, 255, 0) 0%, #000829 100%);
+    background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, #000829 100%);
+    border-style: none;
+    border-color: transparent;
+  }
+
+  #galery-r-content {
+    margin-top: 30px;
+    display: none;
+  }
+
+  #galery-l-content {
+    margin-top: 30px;
+  }
+
+  .galery-explain {
+    background-color: black;
+    opacity: 0.7;
+    @media #{$medium-up} {
+      margin-top: 20px;
+      padding-top: 10px;
+    }
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+  }
+
+  .galery-city {
+    top: 15px;
+    @media #{$medium-up} {
+      font-size: 35px;
+    }
+    @media #{$small-only} {
+      font-size: 15px;
+    }
+    @media #{$medium-only} {
+      font-size: 31px;
+    }
+    line-height: 22px;
+    letter-spacing: 7px;
+    font-family: raleway, sans-serif;
+    font-weight: 700;
+  }
+
+  .galery-date {
+    top: 10px;
+    @media #{$medium-up} {
+      font-size: 34px;
+    }
+    @media #{$small-only} {
+      letter-spacing: 1px;
+      font-size: 14px;
+    }
+    @media #{$medium-only} {
+      font-size: 30px;
+    }
+    letter-spacing: 7px;
+    font-family: raleway, sans-serif;
+    font-weight: 300;
+  }
+
+  .factory {
+    @media #{$small-only} {
+      line-height: 26px;
+      font-size: 11px;
+    }
+    @media #{$medium-up} {
+      font-size: 12px;
+      line-height: 19px;
+    }
+    letter-spacing: 0px;
+    font-family: sonsie-one, sans-serif;
+    font-weight: 400;
+  }
+
+  .galery-img {
+    cursor: pointer;
+    border-left: 1px solid white;
+  }
+}

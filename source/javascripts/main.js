@@ -36,6 +36,15 @@ $(document).ready(function(){
         pager: false,
     });
 
+    $('#benefit-slider-mobile').bxSlider({
+        auto: true,
+        autoHover: false,
+        controls: true,
+        autoControls: false,
+        pause: 5000,
+        pager: false,
+    });
+
     var bxLeft = $('#benefit-slider-left').bxSlider({
         mode: 'vertical',
         auto: true,

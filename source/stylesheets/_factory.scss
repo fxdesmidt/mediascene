@@ -1,0 +1,45 @@
+#factory-illustration {
+  z-index: 1;
+  width: 560px;
+  height: 653px;
+  border-color: #000000;
+  position: relative;
+  left: 100%;
+  background: transparent image-url("about-img-2.png") no-repeat left top;
+  -webkit-transition:all 1.0s ease-in-out;
+  -moz-transition:all 1.0s ease-in-out;
+  -o-transition:all 1.0s ease-in-out;
+  transition:all 1.0s ease-in-out;
+}
+
+#factory {
+  position: relative;
+  top: -50px;
+}
+
+#factory-content {
+  .factory-l-content {
+    z-index: 10;
+  }
+  color: white;
+  background: image-url("footer_lodyas.jpg") repeat left top;
+  h2 {
+    color: white;
+    @media #{$medium-up} {
+      font-size: 4.5em;
+    }
+    @media #{$small-only} {
+      font-size: 2em;
+    }
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #factory-description {
+    span {
+      font-weight: bolder;
+    }
+    line-height: 1.6;
+  }
+}

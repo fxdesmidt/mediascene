@@ -1,0 +1,138 @@
+#benefit {
+  position: relative;
+  top: -50px;
+}
+
+.benefit-margin-bottom {
+  margin-bottom: 20px;
+}
+
+#benefit-content {
+  @media #{$medium-up} {
+    height: 700px;
+    .mobile-benefit {
+      display: none;
+    }
+    .not-mobile-benefit {
+      display: block;
+    }
+  }
+  @media #{$small-only} {
+    .mobile-benefit {
+      display: block;
+    }
+    .not-mobile-benefit {
+      display: none;
+    }
+  }
+  .bx-prev, .bx-next {
+    display: none;
+  }
+  #benefit-navigation {
+    height: 141px;
+    #content {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      padding-right: 40px;
+    }
+  }
+  #leftBtn {
+    cursor: pointer;
+    position: relative;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-color: #999999;
+  }
+  #rightBtn {
+    cursor: pointer;
+    position: relative;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-color: #999999;
+    margin-left: 25px;
+  }
+  .bx-wrapper {
+    height: 100% !important;
+  }
+  color: black;
+  h2 {
+    color: black;
+    @media #{$medium-up} {
+      font-size: 4.5em;
+    }
+    @media #{$small-only} {
+      font-size: 2em;
+    }
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .benefit-content-center {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+  }
+  .img-benefit-first-bloc-left {
+    background: #fff image-url("dj-u682-fr.jpg") no-repeat left top;
+  }
+  #img-benefit-first-bloc-center {
+    background: #fff image-url("6900641299_38141c68b1_b-u687-fr.jpg") no-repeat left top;
+  }
+  #img-benefit-first-bloc-right {
+    background: #fff image-url("guitar-u688-fr.jpg") no-repeat center center;
+  }
+  .img-benefit-second-bloc-left {
+    background: #fff image-url("image_presta_test.jpg") no-repeat left top;
+  }
+  #img-benefit-second-bloc-center {
+    background: #fff image-url("album-art.jpg") no-repeat left top;
+  }
+  #img-benefit-second-bloc-right {
+    background: #fff image-url("399085783_440b8a02a7_o-u547-fr.jpg") no-repeat center center;
+  }
+  h3 {
+    font-size: 16px;
+    line-height: 26px;
+    font-family: raleway, sans-serif;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    width: 280px;
+  }
+  p {
+    margin: 0 auto;
+    z-index: 129;
+    width: 280px;
+    min-height: 196px;
+    background-color: transparent;
+    color: #363636;
+    position: relative;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: inherit;
+    font-family: raleway, sans-serif;
+    text-align: justify;
+  }
+  .img-benefit {
+    margin: 0 auto;
+    z-index: 110;
+    width: 280px;
+    height: 246px;
+    border-color: #000000;
+    padding-top: 25px;
+    position: relative;
+    background-size: cover;
+  }
+  .benefit-description {
+    .columns {
+      padding-right: 50px;
+      padding-left: 50px;
+    }
+  }
+}
